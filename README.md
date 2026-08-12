@@ -42,15 +42,6 @@ Dado el fuerte desbalance de clases (fallecimientos como eventos raros), se empl
 
 ---
 
-## Estructura del repositorio
-
-├── NN_XGB_v3.py # Pipeline unificado (código principal)
-├── Tesis_DAtri_Rafael.pdf # Documento completo de la tesis
-├── README.md
-└── .gitignore
-
----
-
 ## Requerimientos
 
 - Python 3.9+
@@ -114,4 +105,4 @@ Los resultados (modelos entrenados, gráficos, métricas y tablas) se guardan en
 
 Rafael D'Atri
 📧 datri.rafa@gmail.com
-🔗 [LinkedIn](https://linkedin.com/in/rafaeldatri)
+🔗 [LinkedIn]([https://linkedin.com/in/rafaeldatri](https://www.linkedin.com/in/rafael-d-atri-7796b5204/)
