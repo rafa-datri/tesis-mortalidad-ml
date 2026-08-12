@@ -105,4 +105,4 @@ Los resultados (modelos entrenados, gráficos, métricas y tablas) se guardan en
 
 Rafael D'Atri
 📧 datri.rafa@gmail.com
-🔗 [LinkedIn]([https://linkedin.com/in/rafaeldatri](https://www.linkedin.com/in/rafael-d-atri-7796b5204/)
+🔗 [LinkedIn][https://linkedin.com/in/rafaeldatri](https://www.linkedin.com/in/rafael-d-atri-7796b5204/)
