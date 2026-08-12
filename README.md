@@ -43,3 +43,75 @@ Dado el fuerte desbalance de clases (fallecimientos como eventos raros), se empl
 ---
 
 ## Estructura del repositorio
+
+├── NN_XGB_v3.py # Pipeline unificado (código principal)
+├── Tesis_DAtri_Rafael.pdf # Documento completo de la tesis
+├── README.md
+└── .gitignore
+
+---
+
+## Requerimientos
+
+- Python 3.9+
+- Dependencias principales:
+  - `numpy`, `pandas`, `scipy`
+  - `scikit-learn`
+  - `xgboost`
+  - `tensorflow` / `keras`
+  - `imbalanced-learn` (SMOTE)
+  - `matplotlib`, `joblib`
+
+Instalación rápida:
+
+```bash
+pip install numpy pandas scipy scikit-learn xgboost tensorflow imbalanced-learn matplotlib joblib
+```
+
+---
+
+## Datos
+
+Los datos utilizados corresponden a una cartera real de rentas vitalicias de una aseguradora chilena, provistos bajo acuerdo de confidencialidad. **Por este motivo, los datos no se incluyen en este repositorio.**
+
+El pipeline espera dos archivos CSV en el directorio de trabajo:
+
+- `DF_TOTAL_CB.csv`: base de asegurados con variables demográficas, temporales y flag de fallecimiento.
+- `MORT_TABLE_CB_H_2020.csv`: tabla regulatoria de mortalidad CB-H-2020 (Chile) para comparación.
+
+---
+
+## Cómo ejecutar
+
+1. Ajustar la ruta `MAIN_PATH` al inicio del script.
+2. Colocar los archivos de datos en el directorio configurado.
+3. Configurar flags según objetivo:
+   - `RUN_XGB` / `RUN_NN`: seleccionar modelos a entrenar.
+   - `SEX_FILTER`: "M", "F" o "ALL".
+   - `OBJ_UMBRAL`: criterio de selección del umbral óptimo.
+4. Ejecutar:
+
+```bash
+python NN_XGB_v3.py
+```
+
+Los resultados (modelos entrenados, gráficos, métricas y tablas) se guardan en `OUTPUT_MODEL_NN_XGB_final/`.
+
+---
+
+## Referencias principales
+
+- Chen, T., & Guestrin, C. (2016). *XGBoost: A Scalable Tree Boosting System*.
+- Chawla, N. V. et al. (2002). *SMOTE: Synthetic Minority Over-sampling Technique*.
+- Haykin, S. (2009). *Neural Networks and Learning Machines*.
+- Ortega, A. (2004). *Tablas de mortalidad*. CELADE.
+- Society of Actuaries (2015). *Experience Studies*.
+- Lee, R. D., & Carter, L. R. (1992). *Modeling and forecasting U.S. mortality*.
+
+---
+
+## Contacto
+
+Rafael D'Atri
+📧 datri.rafa@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/rafaeldatri)
